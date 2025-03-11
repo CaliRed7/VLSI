@@ -1,0 +1,141 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "trigger",
+					"strict" : false
+				},
+				{
+					"name" : "display1[0]",
+					"strict" : false
+				},
+				{
+					"name" : "display1[1]",
+					"strict" : false
+				},
+				{
+					"name" : "display1[2]",
+					"strict" : false
+				},
+				{
+					"name" : "display1[3]",
+					"strict" : false
+				},
+				{
+					"name" : "display1[4]",
+					"strict" : false
+				},
+				{
+					"name" : "display1[5]",
+					"strict" : false
+				},
+				{
+					"name" : "display1[6]",
+					"strict" : false
+				},
+				{
+					"name" : "display2[0]",
+					"strict" : false
+				},
+				{
+					"name" : "display2[1]",
+					"strict" : false
+				},
+				{
+					"name" : "display2[2]",
+					"strict" : false
+				},
+				{
+					"name" : "display2[3]",
+					"strict" : false
+				},
+				{
+					"name" : "display2[4]",
+					"strict" : false
+				},
+				{
+					"name" : "display2[5]",
+					"strict" : false
+				},
+				{
+					"name" : "display2[6]",
+					"strict" : false
+				},
+				{
+					"name" : "display3[0]",
+					"strict" : false
+				},
+				{
+					"name" : "display3[1]",
+					"strict" : false
+				},
+				{
+					"name" : "display3[2]",
+					"strict" : false
+				},
+				{
+					"name" : "display3[3]",
+					"strict" : false
+				},
+				{
+					"name" : "display3[4]",
+					"strict" : false
+				},
+				{
+					"name" : "display3[5]",
+					"strict" : false
+				},
+				{
+					"name" : "display3[6]",
+					"strict" : false
+				},
+				{
+					"name" : "led_out[0]",
+					"strict" : false
+				},
+				{
+					"name" : "led_out[1]",
+					"strict" : false
+				},
+				{
+					"name" : "led_out[2]",
+					"strict" : false
+				},
+				{
+					"name" : "led_out[3]",
+					"strict" : false
+				},
+				{
+					"name" : "led_out[4]",
+					"strict" : false
+				},
+				{
+					"name" : "led_out[5]",
+					"strict" : false
+				},
+				{
+					"name" : "led_out[6]",
+					"strict" : false
+				},
+				{
+					"name" : "led_out[7]",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "reset",
+					"strict" : false
+				},
+				{
+					"name" : "echo",
+					"strict" : false
+				}
+			]
+		}
+	]
+}
