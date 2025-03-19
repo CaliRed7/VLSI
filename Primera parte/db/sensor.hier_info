@@ -1,0 +1,106 @@
+|sensor
+clk => divf:u1.clk
+clk => senal:u2.clk
+rst => trigger:u3.rst
+echo => trigger:u3.echo
+echo => contador:u4.echo
+trig << trigger:u3.salida
+led << contador:u4.salida
+
+
+|sensor|divf:u1
+clk => clkl~reg0.CLK
+clk => conteo[0].CLK
+clk => conteo[1].CLK
+clk => conteo[2].CLK
+clk => conteo[3].CLK
+clk => conteo[4].CLK
+clkl <= clkl~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sensor|senal:u2
+clk => conteo[0].CLK
+clk => conteo[1].CLK
+clk => conteo[2].CLK
+clk => conteo[3].CLK
+clk => conteo[4].CLK
+clk => conteo[5].CLK
+clk => conteo[6].CLK
+clk => conteo[7].CLK
+clk => conteo[8].CLK
+clk => conteo[9].CLK
+clk => conteo[10].CLK
+clk => conteo[11].CLK
+clk => conteo[12].CLK
+clk => conteo[13].CLK
+clk => conteo[14].CLK
+clk => conteo[15].CLK
+clk => conteo[16].CLK
+clk => conteo[17].CLK
+clk => conteo[18].CLK
+clk => conteo[19].CLK
+clk => conteo[20].CLK
+clk => conteo[21].CLK
+clk => conteo[22].CLK
+clk => conteo[23].CLK
+clk => conteo[24].CLK
+clk => snl~reg0.CLK
+snl <= snl~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sensor|trigger:u3
+clk => salida$latch.DATAIN
+rst => salida$latch.ACLR
+echo => salida$latch.LATCH_ENABLE
+salida <= salida$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sensor|contador:u4
+echo => salida.OUTPUTSELECT
+echo => conteo[13].ENA
+echo => conteo[12].ENA
+echo => conteo[11].ENA
+echo => conteo[10].ENA
+echo => conteo[9].ENA
+echo => conteo[8].ENA
+echo => conteo[7].ENA
+echo => conteo[6].ENA
+echo => conteo[5].ENA
+echo => conteo[4].ENA
+echo => conteo[3].ENA
+echo => conteo[2].ENA
+echo => conteo[1].ENA
+echo => conteo[0].ENA
+clkl1 => salida~reg0.CLK
+clkl1 => conteo[0].CLK
+clkl1 => conteo[1].CLK
+clkl1 => conteo[2].CLK
+clkl1 => conteo[3].CLK
+clkl1 => conteo[4].CLK
+clkl1 => conteo[5].CLK
+clkl1 => conteo[6].CLK
+clkl1 => conteo[7].CLK
+clkl1 => conteo[8].CLK
+clkl1 => conteo[9].CLK
+clkl1 => conteo[10].CLK
+clkl1 => conteo[11].CLK
+clkl1 => conteo[12].CLK
+clkl1 => conteo[13].CLK
+rst => salida~reg0.ACLR
+rst => conteo[0].ACLR
+rst => conteo[1].ACLR
+rst => conteo[2].ACLR
+rst => conteo[3].ACLR
+rst => conteo[4].ACLR
+rst => conteo[5].ACLR
+rst => conteo[6].ACLR
+rst => conteo[7].ACLR
+rst => conteo[8].ACLR
+rst => conteo[9].ACLR
+rst => conteo[10].ACLR
+rst => conteo[11].ACLR
+rst => conteo[12].ACLR
+rst => conteo[13].ACLR
+salida <= salida~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
